@@ -8,7 +8,7 @@ All costs associated with deploying smart contracts to the blockchain shall be p
 
 1. Admin functions
 
-    a. ```Setup(uint256[3] interestRates, uint256[6] durations, uint256[] referralRewards,uint256 aumCap)``
+    a. ```Setup(uint256[3] interestRates, uint256[6] durations, uint256[] referralRewards,uint256 aumCap)```
     - Each tier (Bronze, Silver, Gold) has its associated interest rate, regardless of the duration of the deposit
     - Duration options are: 3m, 6m, 9m, 1y, 2y, 3y
     - Referral reward rates for level 1 - 7 referrals are to be configured
@@ -43,29 +43,30 @@ All costs associated with deploying smart contracts to the blockchain shall be p
     - If the withdrawal causes a downgrade of tier, it should collect all the accumulated rewards contributed by the deposits that fall out of the collectable range. (i.e. for a tier B to tier A downgrade, rewards accumulated by the 4th and 5th level referrals are automatically collected altogether)
 
 3. Other Specifications
+
     a. Tiers:
-        Tier Bronze: USDT 100 <= total deposit < USDT 1,000
-        Tier Silver: USDT 1,000 <= total deposits < USDT 10,000
-        Tier Gold: USDT 10,000 <= total deposits
+    *  Tier Bronze: USDT 100 <= total deposit < USDT 1,000
+    *  Tier Silver: USDT 1,000 <= total deposits < USDT 10,000
+    *  Tier Gold: USDT 10,000 <= total deposits
 
     b. Collectable Rewards from Referrals:
-        Tier Bronze: Collect from deposits made by level 1 - 3 referrals
-        Tier Silver: Collect from deposits made by level 1 - 5 referrals
-        Tier Gold: Collect from deposits made by level 1 - 7 referrals
+    *  Tier Bronze: Collect from deposits made by level 1 - 3 referrals
+    *  Tier Silver: Collect from deposits made by level 1 - 5 referrals
+    *  Tier Gold: Collect from deposits made by level 1 - 7 referrals
  
     c. Interests from Deposits (configurable):
-        Tier Bronze: ? % 
-        Tier Silver: ? % 
-        Tier Gold: ? % 
+    *  Tier Bronze: ? % 
+    *  Tier Silver: ? % 
+    *  Tier Gold: ? % 
  
     d. Rewards from Referral Deposits (configurable):
-        Level 1: ? %
-        Level 2: ? %
-        Level 3: ? %
-        Level 4: ? %
-        Level 5: ? %
-        Level 6: ? %
-        Level 7: ? %
+    *  Level 1: ? %
+    *  Level 2: ? %
+    *  Level 3: ? %
+    *  Level 4: ? %
+    *  Level 5: ? %
+    *  Level 6: ? %
+    *  Level 7: ? %
 
 
 ### Subgraph
