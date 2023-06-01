@@ -8,7 +8,7 @@ All costs associated with deploying smart contracts to the blockchain shall be p
 
 1. Admin functions
 
-    a. ```Setup(uint256[3] interestRates, uint256[6] durations, uint256[] referralRewards,uint256 aumCap)```
+    a. ```Setup(uint256[3] interestRates, uint256[6] durations, uint256[] referralRewards, uint256 aumCap)```
     - Each tier (Bronze, Silver, Gold) has its associated interest rate, regardless of the duration of the deposit
     - Duration options are: 3m, 6m, 9m, 1y, 2y, 3y
     - Referral reward rates for level 1 - 7 referrals are to be configured
@@ -67,6 +67,8 @@ All costs associated with deploying smart contracts to the blockchain shall be p
     *  Level 5: ? %
     *  Level 6: ? %
     *  Level 7: ? %
+    
+    e. Deposits are not allowed when AUM cap is reached.
 
 
 ### Subgraph
