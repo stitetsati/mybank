@@ -30,7 +30,7 @@ All costs associated with deploying smart contracts to the blockchain shall be p
     b. ```Deposit(tokenId, duration)```
 
     - Allows an NFT holder to set up a term deposit of a specified duration
-    - If the deposit causes an upgrade of tier, it should trigger reward accumulation for deposits that are eligible. (i.e. for a tier A to tier B upgrade, rewards contributed by the 4th and 5th level referrals should start accumulating.)
+    - If the deposit causes an upgrade of tier, it should trigger reward accumulation for deposits that are eligible. (i.e. for a Bronze to Silver upgrade, rewards contributed by the 4th and 5th level referrals should start accumulating.)
 
     c. ```Claim(tokenId, rewardIds[])```
     - Allows an NFT holder to claim the referral rewards accumulated up to the current timestamp
@@ -40,7 +40,7 @@ All costs associated with deploying smart contracts to the blockchain shall be p
 
     d. ```Withdraw(tokenId, depositId)```
     - Allows an NFT holder to withdraw a term deposit, and collect the rewards associated with the deposit
-    - If the withdrawal causes a downgrade of tier, it should collect all the accumulated rewards contributed by the deposits that fall out of the collectable range. (i.e. for a tier B to tier A downgrade, rewards accumulated by the 4th and 5th level referrals are automatically collected altogether)
+    - If the withdrawal causes a downgrade of tier, it should collect all the accumulated rewards contributed by the deposits that fall out of the collectable range. (i.e. for a Silver to Bronze downgrade, rewards accumulated by the 4th and 5th level referrals are automatically collected altogether)
 
 3. Other Specifications
 
